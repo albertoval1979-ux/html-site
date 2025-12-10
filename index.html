@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Completa</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>¡Bienvenido a Mi Página Web!</h1>
+        <p>Una página interactiva con HTML, CSS y JavaScript</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>Sección de Inicio</h2>
+        <p>Esta es la sección principal de mi página. Aquí puedo agregar contenido interesante para los visitantes.</p>
+        <button id="btnInicio">Haz clic para saludar</button>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre mí</h2>
+        <p>Me gusta aprender a crear páginas web y experimentar con CSS y JavaScript embebido.</p>
+        <button id="btnSobre">Mostrar mensaje</button>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si quieres contactarme, puedes enviar un mensaje desde aquí (esto es un ejemplo).</p>
+        <button id="btnContacto">Enviar mensaje</button>
+    </section>
+
+    <footer>
+        <p>© 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Funcionalidad de los botones
+        document.getElementById('btnInicio').addEventListener('click', () => {
+            alert('¡Hola! Bienvenido a la sección de inicio.');
+        });
+
+        document.getElementById('btnSobre').addEventListener('click', () => {
+            alert('Gracias por leer sobre mí. ¡Espero que te guste la página!');
+        });
+
+        document.getElementById('btnContacto').addEventListener('click', () => {
+            alert('Mensaje enviado. ¡Gracias por contactarme!');
+        });
+    </script>
+
+</body>
+</html>
